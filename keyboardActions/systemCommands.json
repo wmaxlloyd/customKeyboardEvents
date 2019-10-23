@@ -1,0 +1,20 @@
+{
+	"killProcess":{
+		"label":"Kill Process",
+		"keyCombo":["Key.ctrl","e"],
+		"action":"kill_process.kill_process",
+		"arguement":null
+	},
+	"killSpotifyToken":{
+		"label":"Kill Spotify Token",
+		"keyCombo":["Key.ctrl","s","k"],
+		"action":"spotify_functions.killToken",
+		"arguement":null
+	},
+	"restartDock":{
+		"label":"Restart Dock",
+		"keyCombo":["Key.ctrl","Key.shift","d"],
+		"action":"terminalFunctions.runCommand",
+		"arguement":"killall Dock"
+	}
+}

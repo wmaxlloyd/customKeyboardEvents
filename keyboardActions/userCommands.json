@@ -1,0 +1,65 @@
+{
+	"openHours":{
+		"label":"Open Jira Hours",
+		"keyCombo":["Key.ctrl","j","h"],
+		"action":"chrome.openChromeTab",
+		"arguement":"https://qualtrics.atlassian.net/plugins/servlet/ac/is.origo.jira.tempo-plugin/tempo-my-work?user.key=mlloyd&project.key=IMP&project.id=15900&user.id=MLLOYD#!/timesheet/?columns=WORKED_COLUMN&dateDisplayType=days&from=2018-02-01&groupBy=issue&periodType=CURRENT_PERIOD&to=2018-02-28&viewType=TIMESHEET&worker=mlloyd"
+	},
+	"openBMWRunBook":{
+		"label":"Open BMW Runbook",
+		"keyCombo":["Key.ctrl","b","w"],
+		"action":"chrome.openChromeTab",
+		"arguement":"https://docs.google.com/document/d/13cubKLaNuke0vez-YN3WVFI-aYxRxQLwPuyz-JG0m6I/edit#heading=h.wgcnx7mguhsq"
+	},
+	"prepBMWRunbook":{
+		"label":"Running BMW Runbook",
+		"keyCombo":["Key.ctrl","Key.shift","b","r"],
+		"action":"chrome.openMultipleChromeWindows",
+		"arguement":[
+			[
+				"https://docs.google.com/document/d/13cubKLaNuke0vez-YN3WVFI-aYxRxQLwPuyz-JG0m6I/edit#heading=h.wgcnx7mguhsq",
+				"https://docs.google.com/spreadsheets/d/1xgcIs02IGUVkZylRN09PoTZTgsts1PB9wfDHR22-dic/edit#gid=0",
+				"https://docs.google.com/spreadsheets/d/1JO5txvPiV7Y76Wc4F1MB4TidauonqTa7febqz92jm2A/edit?ts=5a39d1b7#gid=1126112066",
+				"https://service.sumologic.com/ui/dashboard.html?k=Ks0M9ooZuhX4oNWe6lOOWaSdDtNXpUk5IIRwmk24s3qOdY2PXto5ku9N29Jq&t=r"
+			],[
+				"https://jenkins.eng.qops.net/job/ES-QE/job/Client-Automation-Jobs-EMEA/job/BMW",
+				"https://jenkins.eng.qops.net/job/ES-QE/job/Client-Automation-Jobs-APAC/job/BMWJapan_Automation",
+				"https://jenkins.eng.qops.net/job/ES-QE/job/Client-Automation-Jobs-NA/job/BMWNA_Automation/job/E2E-BMWNA",
+				"https://bmwvertriebsgmbh.eu.qualtrics.com/",
+				"https://bmwgroupne.eu.qualtrics.com/vocalize",
+				"https://iad1.qualtrics.com/login?path=%2Fvocalize%2F&product=voc"
+			]
+		]
+	},
+	"openSlack":{
+		"label":"Open Slack App",
+		"keyCombo":["s","l","a"],
+		"action":"terminalFunctions.openApp",
+		"arguement":"Slack"
+	},
+	"openSpotify":{
+		"label":"Open Spotify App",
+		"keyCombo":["s","p","t"],
+		"action":"terminalFunctions.openApp",
+		"arguement":"Spotify"
+	},
+	"addSpotyTrack":{
+		"label":"Add Current Spotify Track",
+		"keyCombo":["Key.ctrl","s","r"],
+		"action":"spotify_functions.addCurrentTrackToPlst",
+		"arguement":"759qii8XRaub8d09rwAJ2p",
+		"notification":"Song added to playlist!"
+	},
+	"toggleNode_Sublime":{
+		"label":"Toggle node packages in sublime",
+		"keyCombo":["Key.ctrl", "Key.shift", "p"],
+		"action":"sublime_functions.toggleNode",
+		"arguement":""
+	},
+	"toggleNode_VsCode":{
+		"label":"Toggle node packages in VS Code",
+		"keyCombo":["Key.ctrl", "Key.shift", "n"],
+		"action":"vscode_functions.toggleNode",
+		"arguement":""
+	}
+}
